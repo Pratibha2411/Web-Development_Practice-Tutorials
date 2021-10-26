@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width,initial scale=1.0">
+    <meta http-equiv="X-UA_compatible" content="ie=edge">
+    <title>CSS Selectors</title>
+    <!-- css selectors are used to find the element whose property will be set,Selectors are used to target the html elements,Selectors makes it easy for us to easily target single/multiple HTML elements in the markup for example p{color:blue;}here p is selector ,color is property and blue is value and selector can choose that which tag you want to design like paragraph and heading -->
+    <style>
+        /* here p is a selector that apply css on all paragraph ,we can insert an id in paragraph so only that paragraph who has id that will add css design in it  this is ""CSS ELEMENTS SELECTOR""*/
+        p {
+            background-color: rgb(20, 220, 137);
+            color: darkblue;
+            border: 2px solid black;
+        }
+
+        /* here tanu is id and where this id will used then only that lines or paragraph apply this CSS design. and those have no tanu named id that will not able to apply that css design THIS IS""ID SEECTORS""*/
+        #tanu {
+            background-color: rgb(100, 93, 0);
+            color: rgb(81, 194, 156);
+        }
+
+        /* here we can use class and also optionaly we can take an another id coz 1 id has only 1 element but 1 class has so many elements and 1 element has so many classes & "." represents class &# represents id THIS IS ""CLASS SELECTOR"" */
+        .world {
+            color: rgb(209, 60, 60);
+            background-color: yellowgreen;
+        }
+
+        /* this is grouping se;ector that combine selector */
+        footer,
+        span {
+            background-color: pink;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS selectors</h2>
+    <h2>types of basic CSS selectors</h2>
+    <p> CSS elements selector </p><br>
+    <p> CSS id selector </p><br>
+    <p> CSS class Selector </p><br>
+    <p> CSS grouping selector</p><br>
+    <div>
+        <p>trying tag here now </p><br>
+    </div>
+    <p id="tanu">trying tag </p>
+    <p id="tanu">here </p>
+    <p id="tanu">now </p>
+    <p id="mahakal" class="bholenath world">Now or Never </p>
+    <p id="tanu">Okay </p>
+    <p>I choose NOW </p>
+    <span>
+        this is span
+    </span>
+    <div>
+        <footer>this is footer</footer>
+    </div>
+</body>
+
+</html>

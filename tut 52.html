@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <h1>console m dekho JS... </h1>
+    <div class="container">simple si html</div>
+    <script>
+        // yaad rkhna variable ki jgh let use kr rhe h okayzzz
+        // JS m jo values hoti h wo 2 trf ki hoti h 1)primitive yaa fir 2)reference ok we can say ya to object bnte h yaa primitive dataTypes bnte h ,Primitive DataTypes=string,int,boolean,null ,undefined(iska mtlb ki isme koi value nhi h)
+        let myVar = 34;
+        let myVar2 = "string";
+        let myVar3 = true;
+        let myVar4 = null;
+        let myVar5 = undefined;
+
+        // primitives k alawa hm jo v bnate h usko object bolte h object ka mtlb(object  jo h wo key value pairs ko store krta h see in let employee)
+        // let employee = {
+        //     name: "TANU",
+        //     salary: 10,
+        //     channel: "COOLEST GUL",
+        //     "channel 2": "CodewithHarry",
+        // agr channel 2 yaha 2 spahle space dena h to dounle quotes k andr likhna padega inko keys bolte hor inme jo value h uskovalue he bolenge to key m spaces lane k liye "" m likhna pdega
+        // }
+        // console.log(employee);
+ 
+//  ab hm arrays dekhenge array ek object he h pr spcl type ka object haii isme kis v trh ki value (yaa type of variables daal skte h )ek saath aa skti h jese niche integer ,string,undefined v aae or isme boolean v aa skti h
+        // let names = [1, 2, 4, "Harry", undefined];
+        // console.log(names);
+        // console.log(names[1]); iss s aap 1th position pr jo h wo print krna h to ese kr krke uske element ko access kr skte h yaha o/p 2 aaega ye hme sikhna thoda jaruri sa hai to yaad rakhna 
+        
+        // iss s ek new array bhi same he array jo upper h wese he usko defined krega
+        // let names = new Array(41, 2, 4, "Harry", undefined);
+        let names = new Array(23); 
+        console.log(names.length);
+        // iss s kitne elemet h wo count krke o/p m dega
+        names = names.sort();
+        // sort krne s jo chhota hoga wo pahle aaega like 2,4,41,ese
+        names.push("this is pushed");
+        // push krne s end m hm kuch v likh skte h puch ki help s
+        console.log(names);
+    </script>
+</body>
+</html>

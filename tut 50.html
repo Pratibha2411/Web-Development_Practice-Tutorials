@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript:String Functions</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+    <h3>console m dekho javaScript he h iss web page m buss..</h3>
+        <script>
+    var str = "This is a string";
+    console.log(str);
+
+    // First occurence of a substring ....mtlb ye this is a string m is jis number pr h ye uska index likh kr dega output mai ye index 0 s start hota h and space ko v count krte h then 1,2,3...
+    var position = str.indexOf('is');
+    console.log(position)
+
+    // Last occurence of a substring
+    position = str.lastIndexOf('is');
+    console.log(position)
+
+    // Substring from a string
+    // var substr = str.slice(1,7);
+    // var substr = str.substring(1,7);
+    var substr1 = str.substr(1,3);
+    console.log(substr1)
+    // slicing ka mtlb ki bracket m en start value or ek end value aayegi jis s ki start digit ki alphabet s last dighit ki position pr jo alphabet h wha tk ka alphabet he likha aayega o/p mai sliceing krne k kai alg tarike methods hai same upper str.substring kia h joki same slicing ka work krega lekin difference ye h slice and substring m ki slice negative value v accept krega jbki substring sirf positive value he accept krta hai and inme jo lasr digit hoti h uss s ek km digit wale alphabet ko o/p m deta h jbki substr mtlb str.substr(1,3)isme 1 s start krke 3 tk k saare alphabet dega...
+    
+    // var replaced = str.replace('string', 'TANU/PRATI');
+    // console.log(str)
+    // console.log(replaced)
+    // ye upper var replaced=str.replace krke hm string jo h this is a sting m uski jhg mtlb string ki jgh aap jo replace krwaa chahte ho wo krwa skte ho like abhi aapne string ki jgh tanu/prati kr diya or haa hamari purani string replace nhi hogi ye ek new string bna rhe h hm replace krke..
+
+// a ye niche wale sare functions hai inko dekho uncomment krke
+    // console.log(str.toUpperCase());
+    // toUpperCase krne s string pura upperCase m ho jayga same lowercase m v hoga
+    // console.log(str.toLowerCase());
+    // var newString = str.concat('New String')
+    // console.log(newString)
+    // upper concat v same ek new steing ko add krne k lie + ki trh kaam krta h but + is better 
+
+    // var strWithWhitespaces = "   this contains        whitespaces   ";
+    // console.log(strWithWhitespaces)
+    // console.log(strWithWhitespaces.trim())
+    // yaha upper white sapces trim mtlb hatane k liye use krte h
+
+    // var char2 = str.charAt(2);
+    // var char2 = str.charCodeAt(2); // Not very important isko likhna jyada jaruri nhi h skip and colsole .log 
+    // console.log(char2)
+    // upper charArt(2) krne s 2 digit ki position pr jo v alphabet hoga wo o/p m print ho jaega
+
+    console.log(str[3])
+    // upper isme slicing kr dete h mtlb 3 digit ki position pr jo alphabet hoga wo slice ho jaega
+
+    </script>
+</body>
+</html>

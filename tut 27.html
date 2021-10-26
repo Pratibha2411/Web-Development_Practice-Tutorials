@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewpoint"content="width=device-width , initial-scale=1.0">
+<meta http-equiv="X-UA_compatible" content="ie=edge">
+<title>Visibility and z-index</title>
+<style>
+    .box{
+        width:190px;
+        height:168px;
+        border:2px solid black;
+    }
+    #box-1{background-color:brown;
+    position:relative;
+    top:49px;
+    Z-index:-120;
+    }
+    #box-2{
+        /* agr visibility default rakhne ho sirf show-off k liye visibility tag use krna ho to visibility:visible; rakh skte h */
+        /* visibility:hidden; iss s hide ho jayega or jagah reserve rhti h (will hide the element but will show its empty space)  */
+    
+        /* display:none; yaha display none kr dene s jo jagah reserve ho rhe the iss box ki wo hide ho jayegi (will hide the element and space) */
+        visibility:visible;
+        background-color:rgb(69, 42, 165);}
+    #box-3{background-color:rgb(20, 192, 63);
+    /* Z-index only works in position element is ur position is fixed absolute stickty relative r default position static hoti h to wha work nhi kregi */
+    position :relative;
+    top:34px;
+    Z-index:12;
+    
+    }
+    #box-4{background-color:rgb(39, 188, 247);}
+    </style>
+</head>
+
+<body>
+    <h1>practice z-index more uhh haven't learn at good at he teach</h1>
+    <!-- here #mtlb id k aage $lga dene s box 1 box2,box3,box4 series m aa jayenge -->
+<div class="box" id="box-1"></div>
+<div class="box" id="box-2"></div>
+<div class="box" id="box-3"></div>
+<div class="box" id="box-4"></div>
+</body>
+</html>

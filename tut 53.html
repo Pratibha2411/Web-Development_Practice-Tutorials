@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript:</title>
+</head>
+<body>
+    <h3>Isko to bhiya aap vdo s he smjho to achha hoga</h3>
+    <div class="container">
+        This is a container
+    </div>
+</body>
+<script src="tut 53.js"></script>
+<h1>console m dekho JS... </h1>
+<script>
+console.log("This is tutorial 53");
+// greetings from JS krne pr iska  mtlb ye nhi ki value chnge ho jayegi nhi same value raheg kyoki ye default value hogi greetText ki 
+function greet(name, greetText="Greetings from JavaScript"){
+    let name1 = "Name1";
+    // upper ek variable banaya to ye name1 jo h ye dusre(name1=shoubham)name1 ka kuch nhi bigad skta kyoki iska scope local hai isko sirf ye wala  function janta h ahr koi effect nhi krega lekin dusra wala name1 global scope m h ki usko koi v use kr skta haii
+    console.log(greetText + " " + name);
+    console.log(name + " is a good boy");
+}
+
+function sum(a,b,c){
+    let d = a + b + c;
+    return d;
+    // This line will never execute (Unreachable code)
+    // console.log("Function is returned");
+}
+
+// yaha gree function lga krke baar baar pura code likhne s bach jaoge or aapka code sb name k saaath run hoga baar baar repeat krne ki jarurat nhi pdegi
+let name = "Harry";
+let name1 = "Shubham";
+let name2 = "Rohan";
+let name3 = "Sagar";
+// ab hm yaha pr greet ko ek or argument pass kr skt haii like greet text or yaha pr hme function ko greettext ko yaha call krna pdega wrna gud mning nhi ayega likha hua
+let greetText1 = "Good Morning";
+greet(name, greetText1);
+greet(name1, greetText1);
+greet(name2, greetText1);
+// let returnVal = greet(name3);
+// console.log(returnVal)
+
+let returnVal = sum(1,2,3);
+console.log(returnVal)
+// console.log(name + " is a good boy");
+// console.log(name1 + " is a good boy");
+// console.log(name2 + " is a good boy");
+// console.log(name3 + " is a good boy"); 
+// upper inn sbko shorthand krne k lie function ka use krna pdega jisme hm inn sbko wrap kr denge or inn function ko baar baar call krke inko print krwa skte haii greet ki help s
+</script>
+</html>

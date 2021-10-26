@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>ClassRoom Attendence Display</title>
+    <link rel="stylesheet" href="CSS/style 01.css">
+<style>
+/* CSS Reset */
+body{
+    color:black;
+    margin:0px;
+    padding:0px;
+    background: url('img/Sage.png');
+}
+.left{
+    position:absolute;
+    left:27px;
+    top:20px;
+    display:inline-block;
+    border:2px solid black;
+color:white;
+border-radius: 24px;
+}
+.left img{
+    width:73px;
+    /* filter white pic ko black or black ko whitew krega */
+    /* filter:invert(100%); */
+    border-radius: 10px;
+}
+.left div{
+    /* text agr side m hoga to center ho jayega */
+    text-align: center;
+}
+.mid{
+    display:block;
+    width:63% ;
+    border-radius: 24px;
+    margin:20px auto;
+    border:4px solid black;
+    
+}
+.right{
+    position:absolute;
+    right:12px;
+    top:39px;
+    display:inline-block;
+    border:2px solid black;
+    border-radius: 24px;
+}
+.navbar{
+    display:inline-block;
+    background-color: rgb(127, 11, 11);
+}
+.navbar li{
+    display:inline-block;
+    font-size:25px;
+}
+.navbar li a{
+    color:white;
+    text-decoration: none;
+    padding:34px 13px;
+    background-color: black;
+}
+/* .navbar li a:hover, .navbar li a.active{
+    color:red;
+    text-decoration: underline;
+} */
+.btn{
+    margin:0px 1px;
+    color:white;
+    background:black;
+        /* border:1px solid black; */
+    /* border-radius: 1px; */
+}
+.navbar input {
+            border: 2px solid black;
+            border-radius: 8px;
+            padding: 2px;
+        }
+h1{
+            color:black;
+            text-align:center;
+        }
+</style>
+</head>
+
+<body>
+    <h1>ek website banao hehehe</h1> 
+    <h2>Oooo bhaiii ye milega aapko project 01 mai</h2>
+    <h1><strong><em>Student Attendence System</strong></em></h1>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo.png"alt="">
+            <div><em>ClassRoom</em></div>
+        </div>
+         <!-- mid box for navigation     -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Admin</a></li>
+                <li><a href="#">Faculty</a></li>
+                <li><a href="#">Student</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul>
+        </div>
+        <!-- right box for feedback     -->
+        <div class="right">
+        <button class="btn">Feedback</button>
+        <button class="btn">Email Us</button>
+        <input type="text" name="Feedback,Email Us" class="btn" placeholder="type here">
+        </div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint"content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA_compatible"content="ie-edge">
+        <title>Box Shadow & Text Shadow</title>
+        <style>
+         .container{
+             display:flex;
+         } 
+         .card{
+             margin:23px 12px;
+             padding:22px 12px;
+             /* border:2px solid rgb(214, 15, 15); */
+             background-color: rgb(223, 177, 118);
+             /* box-shadow: 5px 7px rgb(129, 4, 10); */
+             /* box-shadow: -5px -7px  greenyellow; */
+             /* syntax of box-shadow: offset-x offset-y color; */
+             /* box-shadow ek shadow create kr deta h and here 5px is x and 7px is y and then color dena hota h or jb aap positive value doge to shadow niche banegi or same agr aap negative value like -5px -7px doge to upper shadow banegi */
+             /* syntax of box-shadow: offset-x offset-y blur-radius color; */
+             box-shadow: -51px -7px 23px  rgb(129, 4, 10);
+             /* syntax of box-shadow: offset-x offset-y blur-radius spread-radius color; */
+
+             box-shadow: -51px -7px 13px 14px rgb(129, 4, 10);
+             /* now yaha pr 13px krne pr ek blur radius yaa blur shadow aa jayegi or same upper lane k liya value negative krdo  or 14px spred kr dega aapki shadow ko charo trf*/
+             /* ab color m rgb k aage alpha like(0.5) ki value dekr aap decide kr skte o ki aapko shadow ko kitna dark krna h */
+             /* ab aap output m dekhoge ki aapki shadow box k andr aa rhe h so an agr shadow ko box k andr dalna h to kya krna hoga wo niche sikho */
+             /* box-shadow:inset 3px 85px rgb(4, 175, 81); */
+             box-shadow: 3px 10px rgb(4, 175, 81), 15px 17px brown;          
+
+             /* ab hm isme multiple shadow bhi use kr skte h only we need to do is ki hme color k baad , coma lga k dobara s offset-x or baaki sbki value dena hhogi with color */
+
+            } 
+            .card h2{
+                /* same as box-shadow aap text shadow v de skte ho all properties of box-shadow also will apply in text-shadow */
+                text-shadow: 3px 4px 12px rgb(223, 27, 60);
+            } 
+        </style>
+    </head>
+    <body>
+<div class="container">
+    <div class="card" id="card-1">
+        <h2>Card1</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta eos libero iste dolorum saepe esse quidem amet, quibusdam modi sunt sequi aut totam obcaecati? Ipsa iure adipisci quis quasi neque!</p>
+    </div>
+    <div class="card" id="card-2">
+        <h2>Card2</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta eos libero iste dolorum saepe esse quidem amet, quibusdam modi sunt sequi aut totam obcaecati? Ipsa iure adipisci quis quasi neque!</p>
+
+    </div>
+<div class="card" id="card-3">
+        <h2>Card3</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta eos libero iste dolorum saepe esse quidem amet, quibusdam modi sunt sequi aut totam obcaecati? Ipsa iure adipisci quis quasi neque!</p>
+
+    </div>
+
+    </html>

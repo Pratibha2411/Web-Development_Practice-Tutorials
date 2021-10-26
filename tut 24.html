@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1`0">
+    <meta http-equiv="X-UA_compatible" content="ie=edge">
+    <title>CSS Display property</title>
+    <style>
+        *{box-sizing:border-box;}
+        /* (* means all elents should apply this style)*/
+img{
+    /* width:240px; */
+    display:block;
+    margin:auto;
+}h3{
+font-family:'Times New Roman', Times, serif;
+text-align: center;
+}
+header{
+    margin:auto;
+    border:3px solid rgb(146, 5, 5);
+    width:324px;
+}
+.box{
+    border:3px solid rgb(13, 6, 121);
+background-color:gray;
+margin:2px;
+padding:13px;
+width:28%;/*i observe ki % s width bdti h width ki 4aro or s or px s length bdti h sirf width ki */
+box-sizing:border-box;/*used to have a same padding and margine when uhh change the width*/
+display:inline-block;
+
+}
+.container{
+    text-align: center center;
+    margin: auto;
+    width:924px;
+    
+}
+       
+    </style>
+</head>
+<!-- display block means pura block jo ki puri width lega,& display inline means element utni he jagah lega jitni required h or agr aapko kisi inline element ki width deni h to pahle dispaly block krna padega or if if if aap agr inline element ko he width k saath khilwaad krna chahte ho to inline block use krke kr skte ho -->
+<body>
+    <header class="top">
+                <img src="https://instagram.fidr1-2.fna.fbcdn.net/v/t51.2885-19/s320x320/94483986_565170940777967_8149939884291784704_n.jpg?_nc_ht=instagram.fidr1-2.fna.fbcdn.net&_nc_ohc=Ru37iOgfJ8kAX8katvj&oh=2b3108eded115885948af2030d615de4&oe=5ED150D9" alt="image loaded">
+                <h3>Welcome to Tanu's Blog</h3>
+        </header>
+        <div class="container">
+        <div class="box">
+            <h4 class="heading"> Pratibha </h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum possimus consequatur iste quod similique neque in facere deleniti, sapiente, soluta delectus. Voluptates iusto enim voluptas vitae dolore cumque tenetur vel.</p>
+
+        </div>
+
+        <div class="box">
+            <h4 class="heading"> Baloriya </h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum possimus consequatur iste quod similique neque in facere deleniti, sapiente, soluta delectus. Voluptates iusto enim voluptas vitae dolore cumque tenetur vel.</p>
+
+        </div>
+        <div class="box">
+            <h4 class="heading"> Tanu </h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum possimus consequatur iste quod similique neque in facere deleniti, sapiente, soluta delectus. Voluptates iusto enim voluptas vitae dolore cumque tenetur vel.</p>
+
+        </div>
+</div>
+
+        
+</body>
+
+</html>

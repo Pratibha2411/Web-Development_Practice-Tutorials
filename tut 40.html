@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA_Compatible" content="ie=edge">
+    <title>CSS Grid Tutorial</title>
+    <!-- css grid ek display property hoti h aap display create krke kisi v ek box ko gri bna skte h then flex box ki all properties like justify-content,align-items and all use kr skte h totally similar to flex-box but the difference is ki flex-box m item yaane ki box kabhi upper niche left ryt  direction m jata h,lekin css grid m 2-D grid bn jati h then hm inko spain kr skte h coloumn,row set krke-->
+    <style>
+    .container{
+        display: grid;
+        /* grid-template-columns: 300px 100px 100px; */
+        /* upper wale ka mtlb 3 column bna do isme ek ki width 300 dusre ki 100 or tisre ki v 100 width krdo */
+        /* grid-template-columns: 300px auto 100px; */
+        /* ab yaha width automatic krdi to iss s pahle wale ko 300 mili dusre ko auto or tisre ko 100 width milegi */
+        /* grid-template-columns: 1fr 4fr 1fr; */
+        /* fr unit ka mtlb fraction hota h  ye h ki puri width uska 1 part pahle column ko dusre ko 4 part dusre column ko or 1 fr tisre ko de do */
+        grid-template-columns: repeat(3, auto);
+        /* ab hm yaha baar baar har  column k lie to gtc mtlb grid templet column ko set nhi kr skte naa thats why repeat krne ko boloa yaha or jitni baar repeat krwana h wo number likh do. */
+        grid-gap: 2rem;
+        /* grid gap grid k bich m space(gap) create kr deta h yaani ki margin free m mil jati h  */
+    }
+    .item{
+        /* height: 100px;
+        width: 100px; */
+        background-color: red;
+        border: 2px solid black;
+        padding: 15px 5px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">This is Item-1</div>
+        <div class="item">This is Item-2</div>
+        <div class="item">This is Item-3</div>
+        <div class="item">This is Item-4</div>
+        <div class="item">This is Item-5</div>
+        <div class="item">This is Item-6</div>
+        <div class="item">This is Item-7</div>
+        <div class="item">This is Item-8</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-10</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+    </div>
+</body>
+</html>

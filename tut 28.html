@@ -1,0 +1,97 @@
+<! doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="x-UA_compatible" content="ie-edge">
+<title>FlexBox</title>
+<style>
+    .container{
+        display:flex;
+        height:544px;
+        width:100%;
+        border:2px solid black;
+        display:flex;
+        /* flex-direction: row; */
+        /* flex-direction: column; */
+        /* flex-direction:row-reverse; */
+        /* flex-direction:column-reverse; */
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+        /* flex-flow: row-reverse wrap; */
+        /* this is a shorthand for flex-direction:; and flex-wrap:; */
+        /* align-items: center; */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        /* align-items:stretch; */
+        /* justify-content will justify content in horizontal direction */
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly; */
+        /* align-items:center; */
+        /* ye vertical direction m same justify-content jesa kaam krega */
+        /* align-items:flex-end; */
+        /* align-items:flex-start; */
+        /* align-items:stretch; */
+         /* flex properties for flex container  */
+         /* display:flex; yee container ko flex box bna deta h  */
+         /* flex-direction: row-reverse; iska mtlb h ki aap aapke flex box ko kidhr s fill krna psnd krte ho there are so many properties in flex-direction dekho unn sbko 1 by 1  */
+         /* or jo property baad m lihoge usko priority milegi or upper wala matter nhi krega mtlb niche wali property upper wale ko overwrite kr deti h */
+         /* or yaha default value row hogi like flex-direction:row; */
+         /* agr aapko wrap krna h aapke item or kisi b property ko to flex-wrap:wrap; krna pdega iss s wrap ho jayega or sequence m wrap hoga then aap isko kisi v size k responsive gadget yaane mobile laptop tablet m dekh paoge same size m or flex-wrap:isme v khi saari properties h unko dekho khudse kro like wrap-reverse & all */
+         /* flex direction or flex wrap koa gr aapko ek saath likhna h to ek tag use kro that is flex-flow:row-reverse wrap ; ab iss s aapki flex ki direction row-reverse ho jayegi and flex wrap v ho jayega iss s kuch nhi jagha number of lines in code and time bachega isko short-hand bolte h kyoki easy to use h  */
+        /* justify-content:center; iss s jis property ko center align krna chate ho to ye kr dega or iski property ko khud dekho like justify-content: space-between;iss s har element yaa jisko v ye property de rhe ho uske har element k bich m space aa jayegi like yaha har box k bich m space aa gae but haa ye corner s space nhi dega okay or now justify-content:space-evenly;yaha pr ye starting to end sb jagah pr equally space allocate kr deta h then ek hota h space-arround iss property m dono box ki space join hokr bade space show krega jbki starting end or last end m km space rahegi mtlb ek dabbe ki space+dusre dabbe li space=total space in between only 2 boxes  agr smjh nhi aaya to apply kro   */
+        /*dhyaan rahe yaha items likhna h item nhi wrna error hogi' align-item:center; mtlb ki yaha vertically v center ho jayega jis v property m isko use kr rhe ho usko vertically v center kr dega now align-items k or v property(values) h like align-item:flex-start; ismeby default jesa h wesa he rahega or align-item:flex-end krne s niche screen k end m aa jayega
+        iski ek or value hoti h stretch iss sevenly spaces bna leta h */
+    }
+    .item{
+        background-color:tomato;
+    border:2px solid rgb(7, 11, 228);
+    margin:10px;
+    padding:2px;
+    width:200px;
+    height:240px;
+    }
+    #item-1{
+    /* flex properties for flex item */
+    /* higher the order,later it show up in thecontainer mtlb order bada hog to wo baad m dikhay jayega or chhota order hoga to pahle dikaya jayega */
+    /* order:2; */
+    /* flex-grow: 3;  */
+    /* iska flex-grow property ka mtlb h ki jisko aap ye property doge wo jyada size ka ho jayega or jitna size bada karoge utna wo grow karega as compare to other jisme jyada number yaa value doge wo jyada grow hota dikhega or same shrink m v esa he hota h*/
+    /* flex-shrink: 2; */
+    }
+    #item-2{
+    /* flex-shrink: 48; */
+    /* flex-basis: 320; */
+    /* when flix-direction is set to row flex-basis:will control width */
+    /* when fix-dirextion is set to column flex-basis:will control height */
+    }
+    #item-3{
+    /* order:20; */
+    /* flex:2 2 174px; */
+    /* upper m 2 flex-grow h 2nd 2 flex-shrink h & 174px is flex-basis: ;  */
+    /* align-self:flex-end;  */
+    /* iss s jis item or jis id k element ko aapne align-self:flex-end kiya h wo end m chaal jayega same as flex-start k saath bhi h same center v h ye sb align-self ki property hai */
+    /* align-self: flex-start; */
+    /* align-self: flex-center; */
+    }
+        </style>
+    </head>
+
+    <body>
+<h1>FLEXBOX:-(1)Flexbox is a one dimensional layout method for laying out items in rows or columns.
+    (2)CSS flexbox is a better way to align items into a container.
+    (3)Flexbox=Flexible + box.
+    <!-- p{color:blue;} -->
+    <!-- in above line p is a selector color is a property & blue is a value --></h1>
+    <div class="container">
+<div class="item" id="item-1">First box</div>
+<div class="item" id="item-2">Second box</div>
+<div class="item" id="item-3">Third box</div>
+<div class="item" id="item-4">Fourth box</div>
+<div class="item" id="item-5">Fifth box</div>
+<div class="item" id="item-6">Sixth box</div>
+    </div>
+    </body>
+</html>

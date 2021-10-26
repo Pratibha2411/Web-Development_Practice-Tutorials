@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device_width,initial scale=1.0">
+    <meta http_equiv="X-UA_compatible" content="ie=edge">
+    <title> Forms </title>
+</head>
+
+<body>
+    <h2>Form tutorial started</h2>
+    <form action="backend.php">
+        <!-- we are lebeling below name so that can be highlighted to touch on name we can lebel all these info. for ke aage naMe or id="naMe"same hona chahiye -->
+        <label for="naMe">User Name</label>
+        <input type="text" placeholder="Enter Name" id="naMe"><br><br>
+        <label for="Roll">Password</label>
+        <input type="text" placeholder="enter roll num.here" id="Roll"><br><br>
+        <!-- we can use <div>  name blaa blaa </div> at the space of <br> to change the line &<hr> ek horizonatal line create krta h -->
+        <label for="cntct no">Contact number:</label>
+        <input type="text" placeholder="enter ur number" id="cntct no"><br><br>
+        <label for="addr">Address:</label>
+        <input type="text" placeholder="enter your address here" id="addr"><br><br>
+        <label for="mail"> Email ID:</label>
+        <input type="email" placeholder="enter your email-ID here" id="mail"><br><br>
+        Gmail ID:<input type="email">
+        <div><br>
+            <label for="date">Date:</label>
+            <input type="date" id="date">
+
+            <!-- date come with calender  -->
+        </div>
+        <div><br>
+            <label for="rank:">Rank:</label>
+            <input type="number" placeholder="your rank in india" id="rank">
+        </div>
+        <div>
+            <br>
+            <label for="rslt">Result:</label>
+            pass<input type="radio" name="result" id="rslt">
+            fail:<input type="radio" name="result" id="rslt">
+            <div><br>
+                <label for="clg">college student</label>
+                <input type="checkbox" id="clg">
+                <!-- can tick or untick by this if uhh want to already a checked tick so uhh only need to do is write checked after>this -->
+            </div>
+            <div><br>
+                <label for="elg"> Eligibility:</label>
+                <select name="Eligibility" id="elg">
+                    <option value="b.tech(cse)">B.tech</option>
+                   <option value="cs/it">Bsc</option>
+                    <option value="cse/it/10th">Diploma</option>
+                </select>
+            </div>
+        </div>
+        <div><br>
+            <label for="gender">Gender:</label>
+            male<input type="radio" name="Gender" id="gender"> 
+            other<input type="radio" name="Gender" id="gender">
+            female<input type="radio" name="Gender" id="gender">
+            <!-- select only one point name & id will same for all option-->
+
+        </div>
+        <div><br>
+            <label for="note">Write about your self:</label>
+            <br><textarea name="few words" cols="10" rows="5" placeholder="few words about ur self"
+                id="note"></textarea>
+            <!-- text about ur self  cols is coloumn-->
+        </div>
+        <div>
+            <br>
+            <input type="Submit" value="submit">
+            <input type="Reset" value="Reset">
+            <!-- can reset all details from form by using this    -->
+
+        </div>
+        <!-- we can move any of the above line below by using shorcut that is:"alt+niche wali arrow key" -->
+    </form>
+</body>
+
+</html>

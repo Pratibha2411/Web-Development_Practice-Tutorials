@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid </title>
+    <!-- piche m 40 m hmne grid banae the usme hmne row column nhi bataye the sirf column btaye the rows ki length set nhi kjre the -->
+    <style>
+    .grid{
+        display: grid;
+        /* ab iske baad niche hmko batana pdega ki kitne row and column dene h fr ka mtlb fraction hota h yaane ki total height h grid ki usko baaat lega apne aap m */
+        grid-template-rows: 1fr 1fr 4fr;
+        /* ab esa krne s hmne upper ki 3 rows ko to bta dia ki kitna height lena h inko or baaki by default le lega */
+        grid-auto-rows: 2fr;
+        /* iss s grid-auto-rows:2fr; s jo by default rows ki hright set ho rhe the wo sb 2fr ho jayegi */
+        /* grid-template-columns:(1fr,4fr,2fr); */
+        /* iss s pahle grid ki width dusre s 4 guna km hodi or 3rd wale grid ki width pahle wale ki 2 guna hogi */
+
+        grid-template-columns: repeat(4, 2fr);
+        grid-gap: 1rem;
+    }
+    .box{
+        background-color: red;
+        border: 2px solid black;
+    }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <!-- div.box{This is box-$}*10 then enter krne s 10 box create ho jayenge -->
+        <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-5</div>
+        <div class="box">This is box-6</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+    </div>
+</body>
+</html>

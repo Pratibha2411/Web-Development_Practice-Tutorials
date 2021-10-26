@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+<meta charset="UTF-8">
+<meta name="viewpoint"content="width=device-width,initial-scale=1.0">
+<meta http-equiv="x-UA_compatible"content="ie=edge">
+<title>Responsive design</title>
+<style>
+    /* now learn rem rem function  isko html m style krte h*/
+html{
+font-size: 25px;
+/* ab iski wajah s jo hmne padding de h #Second m wo 25*3=75 guna badegi
+agr smjh nhi aaya rem and em to website pr visit kro kisi v browsere k through website is:- comprehensive guide: when to use em vs. rem */
+}
+    .container{
+        /* width:300px; */
+        /* height:344px; */
+        height:100vh;
+        /* mtlb jitna v viewport dikh rha h uski puri height lele */
+        widows: 100vw;
+        /* ye width ko pure viewport m full kr dega */
+
+        font-size:10px;
+        border:2px solid red;
+
+        /* now ab bhot tym esa hota h ki hme pue page ki size ka container yaa box yaa jo v element h wo chahiye hota h to hm baar baar width or height bada kr dekhte h uski jgh pr hm viewport height(vh)and viewport width(vw)use krenge */
+    }
+h3{
+text-align: center;
+}
+#First{
+/* font-size: 10em; */
+/* iska mtlb h ki container ka jo size h uska bhi 10 guna extra large size ka ye hoga */
+/* padding:3px; */
+/* ab yaha padding 90 aayegi computate padding is 90 kyoki yaha ab padding font size k hisab s apna size badayegi */
+
+}
+#Second{
+/* font-size: 3rem; */
+/* padding:3rem; */
+}
+
+</style>
+    </head>
+  
+    <body>
+<h1>em,rem,vh(viewport height),and vw (viewport width)units+Responsive design Explained</h1>
+<!-- em unit ,parent k respect m apni size ko badata h or ghatata h like #first ka size 10em jo h wo .contaner ka size 10px  kbase pr badega  -->
+<!-- <h3>Responsive design:-(1)endless new resolution and devices are difficult to support separately for a web developer</h3>
+<h3>(2) Responsive design isa way for a web developer to make his website adapt to all the devices and resolutions</h3>
+<h3>(3)Responsive design is a necessity and not a luxury anymore!</h3>
+<h1>Various ways Achieve Responsive design are:-1,2,3,4</h1>
+<h3>(1)setting up the viewport</h3>
+<h3>(2)use max-width/max-height</h3>
+<h3>(3)using CSS media queries</h3>
+<h3>(4) Using rem/vh/vm units over pixels</h3> -->
+<div class="container">
+<h3 id="First">first heading</h3>
+<h3 id="Second">second heading</h3>
+<h3 id="Third">third heading</h3>
+
+</div>
+    </body>
+</html>

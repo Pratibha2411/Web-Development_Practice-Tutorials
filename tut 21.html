@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width ,initial-scale=1.0">
+    <meta http-equiv="X-UA_compatible" content="ie=edge">
+    <title>Float & clear Explained</title>
+    <style>
+         *{
+            box-sizing: border-box;
+
+        }
+
+        .market {
+            border: 3px solid rgb(66, 2, 2);
+            width: 800px;
+            margin: 35px auto;
+            background-color:rgb(241, 187, 196);
+            /*here 35px is y-axis margin and auto is x axis It used to take are container in the middle or center*/
+        }
+
+        .item {
+            border: 4px solid black;
+            color: rgb(94, 6, 6);
+            background-color: rgb(137, 228, 228);
+            margin: 12px 15px;
+            /*margin & padding have both axis X & y-here 12Px & 15Px are Y-Axis & x-axis are 15px & 16px */
+            padding: 15px 16px;
+        }
+
+        #Fruits {
+            float: none;
+            width: 90%;
+
+
+        }
+
+        #Veggy {
+            float: left;
+            width: 37%;
+
+        }
+
+        #VeggyFruits {
+            float: right;
+            width: 45%;
+
+
+        }
+
+        
+        h3 {
+            /* text-align:right; */
+            /* text-align:left; */
+            /* text-align:justify; */
+            text-align: center;
+            /*Priorities goes to last-one*/
+            /* you may comment out & comment-in to learn the work of every element */
+
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Selling</h3>
+    <div class="market">
+        <h3>Fruit market</h3>
+        <div id="Fruits" class="item">
+            <h3>fruits</h3>
+            <p id="fruitsPara" class="Para"> uhh want fruits Lorem Lorem Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quibusdam ipsa optio accusamus eaque quia pariatur dolorem, autem laborum vitae
+                maiores!ipsum dolor sit amet consectetur adipisicing elit. Aperiam, neque. ipsum dolor sit amet
+                consectetur, adipisicing elit. Iusto repellat voluptatum veritatis eum officiis cupiditate perspiciatis
+                deserunt pariatur magnam aut </p>
+                 <!-- now this paragraph will be longer so ye kisi m v adjust hone ki koshish
+            krega or overlape kr lega other paragraph ko iss s bachne k liye ham uss paragraph ki id wali style m
+            "clear: left/right/both"kr skte h fir thik ho jayega  -->
+        </div>
+        <div id="Veggy" class="item">
+            <h3> veggy</h3>
+            <p id="VeggyPara" class="Para"> uhh want fruit vegetables Lorem ipsum dolor sit amet. ipsum dolor sit amet.
+                ipsum dolor sit amet. ipsum dolor sit amet consectetur, adipisicing elit. Consectetur praesentium vitae
+                reiciendis ea. Eos maiores omnis, est illo molestiae distinctio. Deleniti eaque quaerat fugit aut esse
+                corporis aspernatur, provident atque hic quidem quos in alias fuga magnam voluptas quis delectus?</p>
+        </div>
+        <div id="VeggyFruits" class="item">
+            <h3>Veggy fruits</h3>
+            <p id="VeggyFruitsPara" class="Para">uhh want other grocery Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Consequuntur, explicabo! ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Tempora, explicabo. Minus labore obcaecati dicta autem! Distinctio corrupti
+                consequatur delectus aliquid adipisci earum veritatis! Tenetur perferendis aliquam ullam quia rerum
+                laborum cum iusto hic, corporis voluptatibus consectetur! Ut, nihil praesentium! At.s</p>
+        </div>
+        <div id="Buy" class="item">
+            <h3>kharidlo</h3>
+            <p id="BuyPara" class="Para"> uhh want fruit vegetables Lorem ipsum dolor sit amet. ipsum dolor sit amet.
+                ipsum dolor sit amet. ipsum dolor sit amet consectetur, adipisicing elit. Consectetur praesentium vitae
+                reiciendis ea. Eos maiores omnis, est illo molestiae distinctio. Deleniti eaque quaerat fugit aut esse
+                corporis aspernatur, provident atque hic quidem quos in alias fuga magnam voluptas quis delectus?</p>
+        </div>
+    </div>
+</body>
+
+</html>

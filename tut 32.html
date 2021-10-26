@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+    <head>
+        <meta CHARSET="UTF-8">
+        <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA_compatibla"content="ie-edge">
+        <title>Attribute & nth child pseudo Selectors</title>
+        <style>
+            .container{
+                margin:auto;
+                display:block;
+                width: 233px;
+
+            }
+         input{
+             display: block;
+         }   
+         /* ye h pseudo selector jiss s ki sirf text yaa jis akele form k element ko style krna h to krte h */
+input[type='text']{
+    padding:23px;
+    border:2px solid red;
+}
+
+/* ek ese element ko style krte h jiska target set h yaane ki upper wale jaha instagram link set ki h wahi target set kiya h agr uss target ko wha s hta denge to ye style nhi hogi go to instagram pr or ye facebook wale target k liye v apply hoga jb tk ki aap waha ka target hta nhi doge yaa same ese krke target _self k liya style nhi krte  */
+a[target]{
+    font-size:34px;
+    color:royalblue;
+}
+a[target='_self']{
+    font-size:24px;
+    color:rgb(116, 57, 165);
+}
+input[type='email']{
+    border:2px solid green;
+    color:rgb(121, 26, 26);
+} 
+/* this is appyu css for thirt child */
+/* ab sbko 1by1 cmnt out krke sikho */
+li:nth-child(3){
+    color:rgb(170, 79, 216);
+}
+/* here 2n=0 zero ka mtlb h har dusre element pr color ho jayega jo aap color doge wo  same aap kitni k liye v kese v kr skte h*/
+/* li:nth-child(2n+0){
+    color:rgb(204, 36, 45);
+} */
+/* li:nth-child(3n+3){
+    color:rgb(86, 36, 204);
+} */
+/* li:nth-child(even){
+    color:rgb(206, 13, 206);
+} */
+        
+ /* li:nth-child(odd){
+    color:rgb(12, 172, 124);
+} */
+        </style> 
+    </head>
+    <body>
+        <div class="container">
+            <h1><a href="http://instagram.com" target="_blank">Go to Instagram</a></h1>
+            <h1><a href="http://facebook.com" target="_self">Go to Facebook</a></h1>
+            <h1><a href="http://whatsapp.com" >Go to Whatsapp</a></h1>
+            <form action="" class="form-control">
+<input type="text" placeholder="Enter ur name">
+<input type="password" placeholder="Enter ur password">
+<input type="email" placeholder="Enter ur Email">
+<input type="Submit" value="Submit">
+            </form>
+            <ul>
+            <li class="item" id="item-1">item1</li>
+            <li class="item" id="item-2">item2</li>
+            <li class="item" id="item-3">item3</li>
+            <li class="item" id="item-4">item4</li>
+            <li class="item" id="item-5">item5</li>
+            <li class="item" id="item-6">item6</li>
+            <li class="item" id="item-7">item7</li>
+            <li class="item" id="item-8">item8</li>
+            <li class="item" id="item-9">item9</li>
+            <li class="item" id="item-10">item10</li>
+            <li class="item" id="item-11">item11</li>
+            <li class="item" id="item-12">item12</li>
+            </ul>
+        </div>
+    </body>
+</html>

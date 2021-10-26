@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interaction using alert, confirm and prompt</title>
+</head>
+<body>
+<h1>console m dekho JS... </h1>
+    <div class="container">
+        This is a page...
+    </div>
+    
+    <script>
+        // Alert in in-browser JavaScript - Does not return anything
+        // alert ek function h jiske andr aap msg string dalte h joki pop-up hoti h aapke page pr. iss alert s jb aap program run karoge to screen pr aapki website open hote he user ko ek msg window k form m  pop-up hoga ab isl=ko un-cmnt krke dekho or ye isko (model window ko bnd kiye bina aap web page k saath kuch nii kr skte ...)
+        // alert("This is a message"); 
+
+        // Prompt in JS
+        // kabhi kabhi aap user s kuch puchna chahoge yaa aap user ko ek prompt dena chahte ho tb aapko let name=prompt("wht is ur name?","default argument jo v aapko dena ho"); karenge or fie hm apne variable k andr enter krenge...
+        // let name = prompt("What is your name?", "Guest");
+        // console.log(name);
+
+        // Confirm in JS
+        //  confirm tb use hota h jb aap user ko warning de rhe ho yaa file ko dlt kr rhe ho tb double check krne k lie use krte h ki okk yaa cancel krna hai...like dlt krte tym v puchte h same wese
+        let deletePost = confirm("Do you really want to delete this post?");
+        // console.log(deletePost);
+        if(deletePost){
+            // Code to delete the post
+            console.log("Your post has been deleted successfully");
+        }
+        else{
+            // Code to cancel deletion of the post
+            console.log("Your post has not been deleted");
+        }
+
+    </script>
+</body>
+</html>
+<!-- quiz:- ek simple se upper 3no method banani h or user ki age puchna h 18 ka h to allow kro or 18 ka nhi h to allow mt kro usko ok..... -->

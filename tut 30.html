@@ -1,0 +1,53 @@
+<! doctype html>
+<html>
+    <head>
+<meta charset="UTF-8">
+<meta name="viewpoint"content="width=device-width,initial-scale=1.0">
+<meta http-equiv="x-UA_compatible" content="ie-edge">
+<title>Media Queries</title>
+<style>
+    .box{
+        font-size:52px;
+        text-align: center;
+        background-color: rgb(231, 100, 100);
+        color:seashell;
+        display:none;
+        
+    }  
+     /* media query ek tarika hota h ki jb bhi screen resize ho jaye tb aapko kya kna h tb aapko specific css ko add kr dena h yane ki inject kr denge  */
+   @media (max-width:300px) {
+        #box-1{
+            display:block;
+            background-color: blueviolet;
+        }    
+    }   
+   @media (min-width:300px) and (max-width: 500px){
+        #box-2{
+            display:block;
+            background-color: coral;
+        }    
+    }   
+   @media (min-width:500px) and (max-width: 800px){
+        #box-3{
+            display:block;
+            background-color: rgb(33, 211, 172);
+        }    
+    }   
+   @media (min-width:800px) {
+        #box-4{
+            display:block;
+            background-color: rgb(204, 13, 13);
+        }    
+    }   
+  </style>
+    </head>
+  
+    <body>
+  <h2>media query achhe pado </h2>
+  <h2>learn media types in css bu google yourself</h2>
+<div class="box" id="box-1">phone hai</div>
+<div class="box" id="box-2">tablet hai</div>
+<div class="box" id="box-3"> desktop computer hai</div>
+<div class="box" id="box-4">white screen computer hai</div>
+    </body>
+</html>

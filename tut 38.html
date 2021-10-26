@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint"content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA_compatible"content="ie-edge">
+        <title>CSS Transform</title>
+<style>
+    *{
+        /* (*)krne s sare body or baaki sb puri web-page ki margin padding jo pahle s the wo 0 ho jayegi */
+        margin:0px;
+        padding:0px;
+    }
+    .box{
+        background-color:brown;
+        border:2px solid black;
+        border-radius:8px;
+        height:300px;
+        width:300px;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        font-size: 40px;
+     /* transform:rotate(45deg); */
+ /* iss s box 45 k angle pr rotate ho jayega */
+ transition:all 1s ease-in-out;
+ /* iski wjh s transition hoga pura */
+       
+    }
+    .box:hover{
+     /* transform:rotate(360deg); */
+     /* transform:skew(40deg); */
+     /* skew ki wjh s 3d effect dikhega or box teda ho jayega */
+     /* transform:scale(1.6); */
+     /* scale krne s box pr hover kroge to box ka size bada ho jayega */
+     /* transform:translateX(123px); */
+     /* translate krne s aapka box axis jo v hogi uske base pr move krega hover krne prd */
+     /* transform:translateY(123px); */
+     transform:translate(123px, 123px);
+     /* iss s dono axis X & Y dono s box aage piche hoga */
+    
+    }
+    .container{
+        background-color: yellowgreen;
+        height:80vh;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+    }
+
+        </style>
+    </head>
+    <body>
+<div class="container">
+<div class="box">
+    This is a Tanu
+</div>
+
+</div>
+    </body>
+</html>

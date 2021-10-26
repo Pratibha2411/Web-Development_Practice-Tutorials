@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta http-euiv="X-UA_compatible"content="ie=edge">
+    <title>Position absolute,Relative,fixed & Sticky in CSS</title>
+    <style>
+.box{
+    /*iske pahle sb coloumn m dikh rhe the ab hm display:inline-block krenege to sb raw m aa jayega & couse off block we can change the height and width bothe*/
+    display:inline-block;
+    border:3px solid red;
+    width:150px;
+    height:150px;
+    margin:3px;
+    padding:2px;
+}
+.container{
+    border:4px solid rgb(80, 3, 39);
+    background-color:rgb(154, 125, 221);
+    height:3450px;
+}
+/*types of position property are=CSS positions:Static(default),absolute,relative,fixed,sticky */
+#box1{
+    /* position: absolute;
+    top:34px;
+    left:134px; */
+    /* absolute;- relative to the position of its first parent,,,also we can use top,left,right,bottom properties..,,,..position absolute krne s position gayab ho jati h*/
+}
+#box2{
+    /* position:relative ;
+    top:24px;
+    left:1034; */
+    /*ye left move nh krta sirf apni position ko bada yaa ghataa skta h*/
+    /* relative position krne pr isme hm top bottom left right property use kr skte h (relatives to its normal position;-apninormal position k related move krega & will leave a gape at its normal position) purani  position mgape aa jata h*/
+}
+#box3{
+    /* position: fixed;
+     right:12px; */
+    /*fixed position:-isme jo v element ko hm fix kr dete h wo fix ho jata h  kuch v krte h agr to wo uski position pr fixed rahega & scroll krne pr v wo hatega nhi (positions element relative to its browser window)*/
+    /* position:sticky; */
+    /* top:4px; */
+    /*this is so helpful in web sites*/
+   
+    /* position by default static he hoti h to jyada frk nhi padta position m*/
+}
+#box4{
+     position: absolute;
+    /* position by default static he hoti h to jyada frk nhi padta position m */ 
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1">1.</div><!-- emmite for 4 div box is=(div.box#box*4) -->
+    <div class="box" id="box2">2.</div>
+    <div class="box" id="box3">3.-Chat with uss</div>
+    <div class="box" id="box4">4.</div>
+</div>
+</body>      
+</html>
+<!-- task=search 10 websites & then try to  make a cool website okay -->

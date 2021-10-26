@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=devide-width,initial-scale=1.0">
+    <meta http-equiv="X-UA_compatible" content="ie=edge">
+    <title>CSS Box model,Margin and Padding</title>
+    <style>
+          p{
+background-color:rgb(107, 132, 207);
+color:rgb(116, 4, 4);
+border:4px solid black;
+height:60px;
+width:750px;
+padding:30px 45px 8px 90px;top right bottom left padding/margin both can done by all side
+{box-sizing:'border-box'}
+/* it is used to not to change the padding by width or not to change the width by padding*/
+/* margin:0; */
+/* padding:0; */
+ 
+        .boxing {
+            background-color: rgb(136, 136, 114);
+            border: 4px solid rgb(1, 5, 19);
+            padding: 30px;
+            margin: 26px;
+            border-radius:23px;
+            width:600px;
+            height:250px;
+                        /* we can set padding and margin for top,bottom,left,right,top-lerft or right,bottom-left or right
+            padding-top:79px;
+            padding-bottom:56;
+            padding-left:78;
+            padding-right:99;
+            padding:34px 45px 66px 88px;
+             */
+        }
+        body{
+            background-color:rgb(168, 248, 172);
+        }
+    </style>
+</head>
+
+<body>
+    <h4>Greatfull for Everything coz I Learned a lot from things</h4>
+    <h4>CSS Box model,Margin and Padding</h4>
+    <div class="boxing">
+                <!-- box model has one element 1st out of it when you set padding it will come outside of it, then border will come then at-last margin will come -->
+        <p>here you go</p>
+        <h3>heading1</h3>
+        <p id="first"> Here i'm using "Lorem" box modeling Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sapiente nulla
+            natus! Necessitatibus ab corrupti magnam aspernatur eum. Autem, ab!</p>
+    </div>
+    <div class="boxing">
+        <h3>heading2</h3>
+        <p id="second">Here i'm using "Lorem" box modeling Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sapiente nulla
+            natus! Necessitatibus ab corrupti magnam aspernatur eum. Autem, ab!</p>
+    </div>
+    <div class="boxing">
+        <h3>heading3</h3>
+        <p id="third"> box modeling Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sapiente nulla
+            natus! Necessitatibus ab corrupti magnam aspernatur eum. Autem, ab!</p>
+    </div>
+</body>
+
+</html>

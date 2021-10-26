@@ -1,0 +1,23 @@
+
+* "ctrl+enter" jump in another line in the middle of the word without breaking word"
+* alt+ Down arrow "You may move any word at down from anywhere or in bewtween the line"
+* "alt+z" we can see the whole horizontal program withot any scrolling "
+* shift+alt+f "arrange the whole program in a manner"
+* . is for class shortcut & # is for id in styling Css
+* &lt;p&gt; it written like <p> coz we can't write <p> in html coz it takes as a pragraph
+
+       1  pound character is written like this "&pound"
+
+       2 copyright character is written like this "&copy"
+
+       3  if you want to chnage a selected element to inspect(ctrl+shift+I)
+
+       4   shortcut key is "ctrl+shift+c" select element and make your own  changes temporary & you can change element style
+
+       5 ctrl+X =cut 
+
+       6 if you wanna create "number of lines with sequntial number series" after writing a single line, then use "line$*5 (here we'll get 5 lines with 1,2,3,4,5 number series)"
+        
+       7 multi cursor funtionality=
+        f12 is the shortcut for inspect
+       

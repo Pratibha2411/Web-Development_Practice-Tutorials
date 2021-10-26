@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA_compatible" content="ie-edge">
+    <title>Keyframes and Animations</title>
+    <style>
+        .container {
+            background-color: rgb(145, 212, 145);
+        }
+
+        .box {
+            background-color: green;
+            width: 250px;
+            height: 260px;
+            position: relative;
+            /* poition relative isliye ki h taaki hm isss box ko page pr move krwa paaye */
+            /* now animation banane k liye sbse pahle animation-name:yoyo; property set krna padti h
+    then animation-duration:2s; dena padega talki hm ye bta paay ki hm iss animation ko kitni der tk show krna chate h then animation-iteration-count:20; hota h joki ye show krta h ki ye animation kitne baar chalega or agr isko full tym chalte he rhne dena h to animation-iteration-count:infinit; krdo jindagi har chalega hehehe then sbse pahle animation ko naam dena pdta h then actual m animation ko banane k liye kreframes ki help s usko add krna pdta h ye sb style tag m he hoga*/
+    
+            /* animation-name: Tanu-2411; */
+            animation-name: beti2411;
+            animation-duration: 2s;
+            animation-iteration-count:10;
+            /* animation-fill-mode:forwards; iski or v property ko khudse apply krke sikho or haa ye animation-fill-mode animation k to (keyframe wale to)tk jayega then wahi pr end hokr stop ho jayega */
+            /* animation-fill-mode:forwards; */
+            /* animation-fill-mode:alternate; */
+            /* alternate s ye animation jakr wapis start point pr aakr khtmk ho jayega */
+           /* animation-timing-function: ease-in; */
+           /* ease-in wale m pahle slow animation jayega then fast ho jayega */
+           /* animation-timing-function: ease-out; */
+           /* ease-in wale m pahle fast animation jayega then end m slow ho jayega*/
+           /* animation-timing-function: ease-in-out; */
+           /* iska v work dekho smnt out krke hehe */
+           /* animation-delay:3s; */
+           /* is delay s 3s k baad ye animation start hoga */
+           /* animation-direction: reverse; */
+           /* iski or v properties ko khudse apply kro isko v dekho cmnt out krke btw ye animation ki direction set kr ega ki kha s start krna hai */
+          /* animation:animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode ye sab niche wali ek line m set kr rhe h hm using short-hand */
+          animation:beti2411 5s ease-in 1s 12 bavkwards;
+
+        }
+
+        /* ab yaha keyframe banane k baad animation ka naame do or uske andr from or to ka use kro ki kha s kha tk kesa kya hoga animation */
+        @keyframes Tanu-2411 {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 400px;
+            }
+        }
+        @keyframes beti2411{
+0%{
+top:0px;
+left:0px;
+}
+25%{
+top:250px;
+left:0px;
+}50%{
+top:250px;
+left:250px;
+}
+100%{
+top:250px;
+left:0;
+}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+
+</html>

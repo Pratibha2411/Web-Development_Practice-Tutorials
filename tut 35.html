@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint"content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA_compatible"content="ie-edge">
+        <title>CSS Variables/Custom properties</title>
+        <style>
+            :root{
+                --danger-color:red;
+                --maxw:733px;
+/* maxw is max-width */
+            }
+         .box{
+             /* learn other variables from googles */
+             /* --box-color is a variable  when we need to use it we can write var(--box-color)*/
+             --box-color:rgb(57, 57, 221);
+             width:200px;
+             height:200px;
+             border:2px solid var(--danger-color);
+             background-color:var(--box-color);
+             border:2px solid red;
+             box-shadow:4px 5px var(--box-color);
+             margin:2px 9px;
+         } 
+         .container{
+             display:flex;
+             align-items:center;
+             background-color:var(--box-color);
+             /* now u can see ki yaha var(--box-color) apply nhi hua iske liya hame dobara s --box-color dena padega  */
+             /* hmne container ki width ko km kiya h isliye jb hme items ko center krna hoga to margin auto krna padegi */
+             max-width:var(--maxw);
+            background-color: var(--danger-color);
+             margin:auto;
+             justify-content:center;
+
+         }
+        </style>
+    </head>
+    <body>
+<div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+    </body>
+</html>

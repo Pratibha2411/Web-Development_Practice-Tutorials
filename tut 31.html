@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA_compatible"content="ie-edge">
+        <title>More on CSS selectors</title>
+        <style>
+           h2{
+               background-color: crimson;
+               color:black;
+               font-weight:bold;
+               text-align: center;
+           }
+           /* div p{
+               color: chocolate;
+               font-weight: bold;
+               background-color: cyan;
+           } */
+           /* div li p{
+               color: rgb(33, 35, 172);
+               font-weight: bold;
+               background-color: rgb(93, 231, 58);
+           } */
+           /* div> p{
+               yaha jo p direct child hoga div ka wo he style hoga isko comment krna jb cmnt out kro is style ko
+               color: rgb(223, 201, 8);
+               font-weight: bold;
+               background-color: rgb(177, 61, 148);
+           }  */
+           /* agr aap chahte ho ki ek ese eelemnt pr css lagana chate ho jiska pichla element div ho so we apply div+p */
+           div+p{
+               color: darkgreen;
+               background-color: darksalmon;
+           }
+        </style>
+    </head>
+    <body>
+<h2>this is more on css selectors</h2>
+<div class="container">
+<div class="row">
+    <ul>
+        <li class="item"><p>this is li inside paragraph</p></li>
+        <li>this will not get affected</li>
+        <p>this is a para inside ul</p>
+    </ul>
+    <p>this si a paragraph</p>
+</div>
+<p>this is another paragraph</p>
+</div>
+<p>this is outermost paragraph</p>
+    </body>
+</html>

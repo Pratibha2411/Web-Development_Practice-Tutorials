@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA_comaptible" content="ie-edge">
+    <title>Styling Links & Buttons</title>
+    <style>
+.container{
+border:3px solid rgb(58, 1, 1);
+background-color:rgb(185, 236, 219);
+padding:20px 22px;
+margin:90px 92px;
+width:790px;
+}
+a{
+    text-decoration:none;/*Underline would have gone*/
+}
+
+ a:hover{
+    color:black(178, 222, 240);
+    /* is a:hover ki wjh s button pr cursor lekr jaye tb words black (jo color diya h wo dikhega or background pr jb cursor jayega to backgroun v chnge ho jayega) */
+    background-color:red (126, 126);
+} .button{
+    background-color:rgb(250, 216, 171);
+    padding:6px;
+    border:none;/*contact ka default border gayab ho jayega*/
+    cursor:pointer/*pahle ek pr he cursor aa rha tha ab iss ki wjh s dono pr cursor aa jayega*/
+    /* font-size: 13px;
+    border-radius:8px;
+    font-family:defined; */
+}
+.button:hover{
+
+
+    color:crimson;
+    background-color:darkcyan;/*change color when uhh click btn & cursor goto there*/
+}
+a:visited{
+    background-color:yellow(123, 160, 228);
+}
+ a:active{
+    background-color:rgb(187, 241, 99);
+} 
+    </style>
+</head>
+
+<body>
+    <div class="container" id ="cont1">
+    <h3>Pseudo selectors & more designing</h3>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, tenetur vero! Debitis, harum. Excepturi totam ex id vero quas aliquam?</p>
+    <a href="https://google.com"class="button">Read more </a>
+    <button class="button">contact us</button>
+    </div>
+</body>
+
+</html>

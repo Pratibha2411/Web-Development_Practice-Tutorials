@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript:--Strings and String Methods</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nisi, quaerat corrupti quas, illum nobis tempore sequi cumque laboriosam magni expedita earum? Similique corrupti nam magni reprehenderit quia vero, reiciendis eius officiis doloremque ipsa?</p>
+    </div>
+    <script>
+        // we can make string by var string=""or'' we can use double quotes and single quotes too in string..or jb v hme apni string m double quote yaa single quote daalna h to hme dono lena padega like: 'thi"s'iska output:thi"s
+    // var string = "this";
+    var string = 'thi"s';
+    var name = "PRATIBHA";
+    var channel = 'TANU_PRATI';
+    var message = 'SUSHANT was a good boy';
+    var temp = `${name} is a 'nice' person "and" he has a channel called ${channel}`;
+    // temp google s pado
+    // console.log(string + name + message);
+    // console.log(temp);
+        // var len = name.length;
+    // console.log(`Length of name is ${len}`)
+    // ye len(length) esa krne s string k alphabet count hokr output m aajayenge jese yaha pr 8 aayega
+    // \n ye ek scapse sequence character h joki sentence ko new line pr laa dega or v scape character hote h jese \n,\t,\b,\\ etc...
+    // console.log("Hello \\nworld\nHarry\tand");
+    var y = new String("this");
+    console.log(y);
+    
+    document.getElementById('content').innerHTML = '<h3>this is a h3 heading</h3>'
+    // document.getel---isme content id naam h fir upper body m content naam ki id  ka div hona chahiye mtlb jo id yaha h wo uper div m hona jaruri h then done fir jese he JS run hogi tb ye heading aa jayegi output m and we done hmne dynamically JS s ek element insert kr dia jo ki pahle string he tha tht's why hme string m command hona jaruri h quki string ko he manipulate krke hm show krenge apni DOM k andr..... 
+    </script>
+</body>
+</html>

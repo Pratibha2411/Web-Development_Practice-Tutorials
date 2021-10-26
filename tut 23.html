@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA_compatible" content="ie=edge">
+    <title>Navigation Menu</title>
+    <style>
+        .navbar {
+            background-color: rgb(127, 11, 11);
+            border-radius: 40px;
+        }
+        .navbar ul {
+            overflow: auto;
+        }
+        .navbar li {
+            float: left;
+            list-style: none;
+            padding: 5px 10px;
+            margin: 18px 26px;
+            width:12px;
+            height:15px;
+
+        }
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            /*iski wjh s jo line aae the home about & all k niche cause of <a href="#"*/
+            color: whitesmoke;
+            background-color: black;
+        }
+        /* harver s jis class ko harver kr rhe ho uske element ko cursor s touch krne pr wo color chnge krdega jo color aap chahte ho usme */
+         .navbar li a:hover {
+            color: red;
+         } 
+        .search {
+            float: right;
+            color: whitesmoke;
+            margin: 20px 20px;
+        }
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 8px;
+            padding: 2px;
+        }
+        h1{
+            color:black;
+            text-align:center;
+        }
+        #image{
+            color:rgb(80, 3, 3);
+            height: 490px;
+            width: 956px;
+                background-image: url('https://www.cr80news.com/wp-content/uploads/2019/03/OldDominionClass-610x292.png');
+                border:2px solid rgb(252, 250, 250);
+                background-position: center center; 
+                /* iski jagah pr hm margin-auto:;v lga skte h image ko center krne k liye  */
+            background-repeat:no-repeat;
+        
+            
+        }
+    </style>
+</head>
+<body>
+    <h1><strong><em>Student Attendence System</strong></em></h1>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Admin</a></li>
+                <li><a href="#">Faculty</a></li>
+                <li><a href="#">Student</a></li>
+                <li><a href="#">Contact </a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>

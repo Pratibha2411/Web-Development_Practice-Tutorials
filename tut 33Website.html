@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint"content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA_compatible"content="ie-edge">
+        <title>Before & After Pseudo Selectors</title>
+        <style>
+section{
+margin:3px 23px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /* border:2px solid red; */
+    height:344px;
+    justify-content: center;
+    /* ye justify paragraph lo box k center kr dega  height bada de then hmko isko center krna h mtlb box k andr k para ko to box k andr para ko center kr dega*/
+    }
+/* iska mtlb ki section k pahle jo v aapko or extra likha h wo aap yaha likh skte ho wo uss section k pahle likha jayeg same after v kr skte ho */
+section::before{
+    font-size: 2rem;
+    content:"Hey I'm Pratibha Baloriya AKA Tanu"
+}
+
+section::after{
+    font-size: 3rem;
+
+    content:"Haste raho,Muskuraate raho..."
+}
+body{
+
+    margin:0px;
+    padding:0px;
+    color:rgb(19, 1, 1);
+    background-color: rgb(0, 0, 0);
+    background:url('https://source.unsplash.com/user/erondu/1600x900')no-repeat center center/cover  ;
+    }
+    header::before{
+        background:url('https://source.unsplash.com/user/erondu/1600x900')no-repeat center center/cover;
+        content:"";
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        z-index:-1;
+        opacity: 0.6;
+
+        /* opacity background k image ko light kr deti h jis s white content white image pr show ho skta h mtlb whte exmaole k liye tha khana ye h ki same backgroun or same clr ho or content show krna ho to opacity tag use krenge         */
+    }
+    
+    .navigation{
+        font-size: 30px;
+        display: flex;
+        padding-left: 188px;
+        
+    }
+    li{
+        cursor: pointer;
+        list-style: none;
+        padding:14px 23px;
+    }h1{
+        font-size: 4rem;
+    }
+    p{
+        text-align: center;
+    }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul class="navigation">
+                    <li class="item"><b>Home</b></li>
+                    <li class="item"><b>About Us</b></li>
+                    <li class="item"><b>Passion</b></li>
+                    <li class="item"> <b>Contact Us</b></li>
+                </ul>
+            </nav>
+            
+        </header>
+        <section>
+            <h1>Welcome to my Lil World</h1>
+            <b><i>Yeahhh Hey all . Hope you all are doing well & I wish GOd may bless you in this COVID-19 war. Stay at home cause you all are so special for us. I wish you all have been doing your work at home properly .This time we all learned a big lesson by this COVID-19 that lesson is that how animals feel when we Quanrantine them .Everyone has rights to live free & enjoy them life Freedomly.Stay Happy.</b></i>
+            
+        </section>
+        <!-- <hr> -->
+    </body>
+</html>

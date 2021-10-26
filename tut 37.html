@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint"content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA_compatible"content="ie-edge">
+        <title>CSS transiotions</title>
+        <style>
+            body{
+                background-color:black;
+            }
+#box{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color: rgb(219, 13, 13);
+    width:200px;
+    height:200px;
+    /* wo properties tyransition ho skti h jinki continous value hoti h like color height width opacity margin font-size etc... and dont use it in binary values */
+    transition-property: background-color;
+    /* same as all the properties will apply in animation same will apply here too */
+    /* transition-duration: 2s; */
+    transition-timing-function: ease-in;
+    /* transition-timing-function: ease-out; */
+    /* transition-timing-function: ease-in-out; */
+    /* transition-delay: 0.6s; */
+    /* or ab hm upper ki 4 lines(property background-color  s delay tk 4 line) ko ek he line m short-hand k through  likh skte hai  */
+transition:background-color 2s ease-in-out 0.6s;
+    
+}
+#box:hover{
+    background-color: rgb(4, 170, 40);
+    border-radius: 10px;
+    font-size:20px;
+    height:400px;
+    width:400px;
+}
+        </style>
+    </head>
+    <body>
+        <h3>This is CSS Transition Tutorial</h3>
+<div class="container">
+<div id="box">
+    This is Box
+</div>
+
+</div>
+    </body>
+</html>
