@@ -1,0 +1,25 @@
+ /* here p is a selector that apply css on all paragraph ,we can insert an id in paragraph so only that paragraph who has id that will add css design in it  this is ""CSS ELEMENTS SELECTOR""*/
+        p {
+            background-color: rgb(20, 220, 137);
+            color: darkblue;
+            border: 2px solid black;
+        }
+
+        /* here tanu is id and where this id will used then only that lines or paragraph apply this CSS design. and those have no tanu named id that will not able to apply that css design THIS IS""ID SEECTORS""*/
+        #tanu {
+            background-color: rgb(100, 93, 0);
+            color: rgb(81, 194, 156);
+        }
+
+        /* here we can use class and also optionaly we can take an another id coz 1 id has only 1 element but 1 class has so many elements and 1 element has so many classes & "." represents class &# represents id THIS IS ""CLASS SELECTOR"" */
+        .world {
+            color: rgb(209, 60, 60);
+            background-color: yellowgreen;
+        }
+
+        /* this is grouping se;ector that combine selector */
+        footer,
+        span {
+            background-color: pink;
+            color: black;
+        }
