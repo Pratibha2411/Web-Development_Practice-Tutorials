@@ -1,0 +1,54 @@
+ 
+         *{
+            box-sizing: border-box;
+
+        }
+
+        .market {
+            border: 3px solid rgb(66, 2, 2);
+            width: 800px;
+            margin: 35px auto;
+            background-color:rgb(241, 187, 196);
+            /*here 35px is y-axis margin and auto is x axis It used to take are container in the middle or center*/
+        }
+
+        .item {
+            border: 4px solid black;
+            color: rgb(94, 6, 6);
+            background-color: rgb(137, 228, 228);
+            margin: 12px 15px;
+            /*margin & padding have both axis X & y-here 12Px & 15Px are Y-Axis & x-axis are 15px & 16px */
+            padding: 15px 16px;
+        }
+
+        #Fruits {
+            float: none;
+            width: 90%;
+
+
+        }
+
+        #Veggy {
+            float: left;
+            width: 37%;
+
+        }
+
+        #VeggyFruits {
+            float: right;
+            width: 45%;
+
+
+        }
+
+        
+        h3 {
+            /* text-align:right; */
+            /* text-align:left; */
+            /* text-align:justify; */
+            text-align: center;
+            /*Priorities goes to last-one*/
+            /* you may comment out & comment-in to learn the work of every element */
+
+        }
+   
