@@ -1,0 +1,39 @@
+ 
+.container{
+border:3px solid rgb(58, 1, 1);
+background-color:rgb(185, 236, 219);
+padding:20px 22px;
+margin:90px 92px;
+width:790px;
+}
+a{
+    text-decoration:none;/*Underline would have gone*/
+}
+
+ a:hover{
+    color:black(178, 222, 240);
+   
+/*    styling the button by "a:hover" when user will hover on it.*/
+    background-color:red (126, 126);
+} .button{
+    background-color:rgb(250, 216, 171);
+    padding:6px;
+    border:none;/*default border of contact would gone*/
+    cursor:pointer/*now cursor will come on both of them before cursor was only showing on 1*/
+    /* font-size: 13px;
+    border-radius:8px;
+    font-family:defined; */
+}
+.button:hover{
+
+
+    color:crimson;
+    background-color:darkcyan;/*change color when uhh click btn & cursor goto there*/
+}
+a:visited{
+    background-color:yellow(123, 160, 228);
+}
+ a:active{
+    background-color:rgb(187, 241, 99);
+} 
+   
