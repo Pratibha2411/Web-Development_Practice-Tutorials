@@ -1,0 +1,33 @@
+
+          p{
+background-color:rgb(107, 132, 207);
+color:rgb(116, 4, 4);
+border:4px solid black;
+height:60px;
+width:750px;
+padding:30px 45px 8px 90px;top right bottom left padding/margin both can done by all side
+{box-sizing:'border-box'}
+/* it is used to not to change the padding by width or not to change the width by padding*/
+/* margin:0; */
+/* padding:0; */
+ 
+        .boxing {
+            background-color: rgb(136, 136, 114);
+            border: 4px solid rgb(1, 5, 19);
+            padding: 30px;
+            margin: 26px;
+            border-radius:23px;
+            width:600px;
+            height:250px;
+                        /* we can set padding and margin for top,bottom,left,right,top-lerft or right,bottom-left or right
+            padding-top:79px;
+            padding-bottom:56;
+            padding-left:78;
+            padding-right:99;
+            padding:34px 45px 66px 88px;
+             */
+        }
+        body{
+            background-color:rgb(168, 248, 172);
+        }
+   
