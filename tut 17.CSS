@@ -1,1 +1,18 @@
 
+
+p{
+    font-family:fantasy;
+        /* font change the look of that element that uhh include to change */
+        /* 2 type of fonts,(1)is web safe fonts-these fonts are alreday pre-installed in most of the operating system & (2)fonts-we need to import them, search google CSS Font Safe to know about Web stack fonts also to import Font uhh can search google FONT whichever font uhh want to import in ur web page uh can click + and then copy the stylesheet & font family 1by1 & paste it  in ur VS-code */
+        font-size:25px;/* can chage size ,px=pixel(1/96th of aninch)*/
+        font-height: 3.3em;/* line height can create space in between above element & recent element*/
+        font-weight:blod;/*it can bold ur font  */
+background-color:rgb(236, 115, 176);
+color:rgb(20, 10, 12);
+border:2px solid black;
+}
+span{
+    font-weight:blod;
+    /* we can bold a single word also only need to do is copy this (font-weight:blod;)in span like given in h3 element and also create a span tag in style element */
+    font-style:italic;
+}
